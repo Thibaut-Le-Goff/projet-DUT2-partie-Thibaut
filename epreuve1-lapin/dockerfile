@@ -1,0 +1,8 @@
+FROM ubuntu:latest
+
+RUN apt-get update -y && apt-get upgrade -y && useradd -ms /bin/bash Lapinou
+
+USER Lapinou
+WORKDIR /home/Lapinou
+
+CMD ["bash"]

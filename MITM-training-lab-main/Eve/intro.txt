@@ -1,0 +1,5 @@
+Bonjour, dans cette épreuve Alice et Bob s'échangent des pings.
+Votre objectif est d'intercepter leurs messages dans lesquels il y a les flags.
+
+/!\ Le mot de passe de Eve est "Eve". /!\
+
