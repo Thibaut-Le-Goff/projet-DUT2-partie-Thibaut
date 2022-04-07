@@ -8,13 +8,14 @@ Les épreuves ainsi créées ont aussi servi à présenter la spécialisation Cy
 Cette épreuve consiste à décoder le code ASCII :
 
 ```shell
-4c 65 20 66 6c 61 67 20 64 65 20 63 65 74 74 65 20 65 70 72 65 75 76 65 20 65 73 74 3a 20 40 24 63 49 7c 
+4c 65 20 66 6c 61 67 20 64 65 20 63 65 74 74 65 20 65 70 72 65 75 76 65 20 65 73 74 3a 20 40 24 63 49 7c 0a
 ```
 
 Solution :
 ```shel
-root@debtiti:/home/titi# echo 4c 65 20 66 6c 61 67 20 64 65 20 63 65 74 74 65 20 65 70 72 65 75 76 65 20 65 73 74 3a 20 40 24 63 49 7c | xxd -r -p
-Le flag de cette epreuve est: @$cI|root@debtiti:/home/titi# 
+titi@debtiti:~/projet-DUT2-partie-Thibaut$ echo 4c 65 20 66 6c 61 67 20 64 65 20 63 65 74 74 65 20 65 70 72 65 75 76 65 20 65 73 74 3a 20 40 24 63 49 7c 0a | xxd -r -p
+Le flag de cette epreuve est: @$cI|
+titi@debtiti:~/projet-DUT2-partie-Thibaut$
 ```
 
 **<ins>Première épreuve :</ins>**\
