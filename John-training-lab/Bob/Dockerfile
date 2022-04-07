@@ -9,7 +9,7 @@ RUN apt-get update -y \
     && useradd -ms /bin/bash Bob \
     # Donne le mot de passe "Bob" à Bob
     && echo Bob:Bob | chpasswd \
-    # ajout d'Eve dans le groupe sudo 
+    # ajout de Bob dans le groupe sudo 
     && usermod -aG sudo Bob
 
     #Dans un bash:
