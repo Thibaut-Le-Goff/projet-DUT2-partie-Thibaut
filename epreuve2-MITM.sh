@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker network create --subnet 172.50.0.0/16 MITM &&
+docker network create --subnet 172.50.0.0/16 MITM
 
 	docker pull ctfiutbeziers/m-alice && 
 	docker run --net MITM --ip 172.50.0.2 --cap-add=NET_ADMIN --name alice-red-man --hostname Red-man ctfiutbeziers/m-alice &
