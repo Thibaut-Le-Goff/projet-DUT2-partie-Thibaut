@@ -9,7 +9,7 @@ pub mod flag {
 	// la forme d'une suite de caractères (str) d'une façon permanente ('static, même si l'original 
 	// disparaît, la copie reste).
 
-        "Bienvenu dans l'épreuve numéro 6 !"
+        "Bienvenue dans l'épreuve numéro 6 !"
     }
 
     pub fn c0ol() -> &'static str {
