@@ -535,7 +535,6 @@ fn main () {
     use std::{thread, time};
 
     println!("{}", flag::flag1_c3st());
-
     thread::sleep(time::Duration::from_secs(2)); 
 
     println!("{}", flag::c0ol());
