@@ -664,3 +664,8 @@ Le participant pourra chercher le flag avec `/flag` :
     <660>   DW_AT_linkage_name: (chaîne indirecte, décalage: 0x94f): _ZN26epreuve6_text_dans_binaire4flag4rvs117h72a5f649d69e3a57E
     <664>   DW_AT_name        : (chaîne indirecte, décalage: 0x98d): rvs1
 ```
+
+Les trois flags de l'épreuve sont :
+- `c3st`
+- `c0ol`
+- `rvs1`
