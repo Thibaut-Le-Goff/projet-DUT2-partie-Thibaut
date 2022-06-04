@@ -163,7 +163,16 @@ Ici le fichier sert à ping Bob dans le but de lui envoyer le flag :
 iptables -A OUTPUT -p icmp --icmp-type echo-reply -j DROP && su Alice
 ```
 
-La commande iptable bloque les echo-replys afin que le participant soit obligé de faire deux arpspoof, le flag qu'Alice envoie à Bob est visible dans l'echo reply que Bob envoie à Alice si le participant ne fait qu'un arpspoof en se faisant passer pour Alice.
+La commande `iptables` bloque les echo-replys afin que le participant soit obligé de faire deux arpspoof, le flag qu'Alice envoie à Bob est visible dans l'echo reply que Bob envoie à Alice si le participant ne fait qu'un arpspoof en se faisant passer pour Alice.
+
+Les éléments de cette commande avec leur explication :
+| éléments  |  explication |
+|---|---|
+|iptables| La commande qui permet de filtrer les trames entrant vers la machine ou sortant de celle-ci.|
+|-A OUTPUT| Ajoute une règle à la table iptable (`-A`), cette règle concerne les trames qui sortent de la machine.|
+|-p icmp| Elle s'appliquent aux trames du protocole (`-p`) icmp.|
+|--icmp-type echo-reply|Plus précisément, elle s'applique aux trame icmp de type (`--icmp-type`) echo-reply, c'est-à-dire, les réponses aux pings.|
+|-j DROP| Définie le fait de prendre l'action (`-j`) de supprimer les trames de ce type.|
 
 Ensuite, si la commande a réussi, le script que root ce log en tant qu'Alice dans le but d'éviter que le participant ne devienne root s'il décide de rentrer dans le conteneur. 
 
@@ -208,7 +217,7 @@ c3110a0c2944   ctfiutbeziers/m-alice   "./ping.sh 202020202…"   2 weeks ago   
 ```
 - Le second est le flag sous forme hexadécimal.
 
-<ins>1.1.3) Conception des Dockerfiles de Eve :</ins>\
+<ins>1.1.3) Conception des Dockerfiles de Eve :</ins>
 
 Le Dockerfile de Eve est construit de la façon suivante :
 
@@ -338,7 +347,7 @@ Dans ce module se trouve, à la place de `[...]` :
 
 `fn` indique la création de la fonction `flag1_XXXX()` qui contient la chaîne de caractère `Bienvenue dans l'épreuve numéro 6 !`.
 
-La valeur envoyée (`->`) par cette fonction a pour type la référence (`&`) d'un string.
+La valeur envoyée (`->`) par cette fonction a pour type la référence, l'adresse, (`&`) d'un string (`str`).
 
 En Rust une référence est l'équivalent d'un pointeur en C à l’exception qu'une référence n'est utilisable, par défaut, qu'au bloc de code où elle a été créée, cela s'appelle la durée de vie.
 
@@ -382,7 +391,7 @@ Cette ligne sert à stopper l'avancement du fil d'instruction, thread, du code p
 Voici un tableau montrant le déroulement de la conception de l'épreuve :
 
 <p align="center">
-	<img src="gantt6.png" width="800"/>
+	<img src="gant6.png" width="800"/>
 </p>
 
 Note : Pour que l'épreuve soit réalisable, le fichier epreuve6-text-dans-binaire.rs doit être compilé comme suit :
