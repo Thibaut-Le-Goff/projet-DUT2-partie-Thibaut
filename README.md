@@ -24,7 +24,7 @@ Afin d'avoir des retours du commanditaire, des rendez-vous ont été organisés 
 
 Le projet a été, principalement, considéré par Thibaut comme étant une opportunité d’approfondir ce qui a était vue en cours et pour apprendre des concepts qui n'y ont pas était vue.
 
-Seront donc présentées dans cette partie l'épreuve qui lui aura apportée le plus de connaissances, néanmoins les autres épreuves qu'il a créées sont disponibles sur son GitHub : https://github.com/Thibaut-Le-Goff/projet-DUT2-partie-Thibaut.
+Seront donc présentées dans cette partie les épreuves qui lui auront apporté le plus de connaissances,néanmoins les autres épreuves qu'il a créées sont disponibles sur son GitHub : https://github.com/Thibaut-Le-Goff/projet-DUT2-partie-Thibaut.
 
 **<h4><ins>1) L'épreuve Man-In-The-Middle :</ins></h4>**\
 L'épreuve Man-In-The-Middle a pour but de permettre aux participants à réaliser leur première attaque informatique, sur des conteneurs Docker, qui se nomme "Man In The Middle".
